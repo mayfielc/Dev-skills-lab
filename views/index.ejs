@@ -7,6 +7,11 @@
     <title>Dev Skills</title>
 </head>
 <body>
-   <h1>Here's all my Dev Skills</h1> 
+   <h1>Here's all my Dev Skills</h1>
+   <ul>
+       <% skills.forEach(function(s){ %>
+            <li><%= s.skill %></li>
+       <% }) %>
+   </ul>
 </body>
 </html>

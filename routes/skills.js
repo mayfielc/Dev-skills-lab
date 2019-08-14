@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const skillsCtlr = require('../controllers/skills');
 
-router.get('/', function (req, res) {
-    res.render('index');
-});
+router.get('/', skillsCtlr.getAll);
 
 module.exports = router;
